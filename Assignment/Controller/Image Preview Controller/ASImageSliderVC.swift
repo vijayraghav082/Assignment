@@ -50,7 +50,7 @@ class ASImageSliderVC: UIViewController {
         super.viewWillAppear(animated)
         if imagesArray.count > 0 {
             delay(time: 0.1) { [weak self] in
-                self?.imageCollectionView.scrollToItem(at: IndexPath(item: self?.selectedIndex ?? 0, section: 0), at: .right, animated: true)
+                self?.imageCollectionView.scrollToItem(at: IndexPath(item: self?.selectedIndex ?? 0, section: 0), at: .right, animated: false)
             }
         }
     }
